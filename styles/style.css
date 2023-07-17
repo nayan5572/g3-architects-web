@@ -31,6 +31,7 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .nav-title {
@@ -65,10 +66,12 @@ nav li a {
 .banner {
     margin-top: 205px;
 }
+
 .banner img {
     width: 100%;
     margin-top: 20px;
 }
+
 .banner-content {
     max-width: 800px;
     text-align: center;
@@ -94,26 +97,98 @@ nav li a {
 
 /*===banner css end===*/
 
+/*===team css start===*/
+main {
+    max-width: 1440px;
+    margin: 70px auto;
+}
+
+.team-main {
+    display: flex;
+    align-items: center;
+}
+
+.team-img-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.team-content {
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+.team-decription {
+    color:#727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 32px;
+}
+
+.quick-list {
+    color: #727272;
+    font-size: 45px;
+    font-weight: 500;
+}
+.team-title{
+    margin-bottom: 24px;
+}
+.of-our {
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.features {
+    color: #FF900E;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+/*===team css end===*/
+
 /*===css for responsive design start===*/
 @media screen and (max-width:576px) {
-    header{
+    header {
         padding: 20px;
     }
-    nav{
+
+    nav, .team-main{
         flex-direction: column;
     }
-    .banner-title{
+    .team-img-content{
+        grid-template-columns: 1fr;
+    }
+
+    .banner-title {
         margin-top: -120px;
         font-size: 25px;
+    }
+    .team-content {
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-top: 30px;
+    }
+    .team-title {
+        font-size: 16px;
     }
 }
 
 @media screen and (min-width: 576px) and (max-width:960px) {
-    header{
+    header {
         padding: 50px;
     }
-    nav{
+
+    nav, .team-main{
         flex-direction: column;
     }
+    .team-content {
+        padding-right: 40px;
+        padding-left: 40px;
+        margin-top: 35px;
+    }
 }
+
 /*===css for responsive design end===*/
