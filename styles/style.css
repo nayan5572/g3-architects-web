@@ -199,6 +199,84 @@ main {
 
 /*===some facts css end===*/
 
+/*===features css start===*/
+.features-main {
+    padding-top: 100px;
+    display: flex;
+    gap: 107px;
+}
+
+.features-content {}
+
+.features-title-sec {
+    color: #131313;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.features-border {
+    border-left: 4px solid #FF900E;
+    padding-left: 20px;
+}
+
+.features-des {
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 24px;
+}
+
+.features-main .card {
+    margin-top: 30px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.features-main .card h3 {
+    color: #131313;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.features-main .card p {
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.ten-years-badge {
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 45px 42px;
+    width: 245px;
+    position: relative;
+    bottom: 100px;
+    right: 60px;
+}
+
+.ten-years-badge h2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.ten-years-badge p {
+    color: #FFF;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+/*===features css end===*/
+
 /*===sponsors css start===*/
 .sponsors {
     text-align: center;
@@ -206,28 +284,31 @@ main {
 }
 
 .sponsors-title {
-    color:  #131313;
+    color: #131313;
     font-size: 45px;
     font-weight: 700;
 }
 
 .sponsors-des {
-    color:  #727272;
+    color: #727272;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
     margin-top: 24px;
 }
-.sponsors-img-content{
+
+.sponsors-img-content {
     margin-top: 50px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     gap: 25px;
 }
-.sponsors-img-content img{
+
+.sponsors-img-content img {
     width: 165px;
 }
+
 /*===sponsors css end===*/
 
 /*===css for responsive design start===*/
@@ -239,7 +320,8 @@ main {
     nav,
     .team-main,
     .facts-card-container,
-    .sponsors-img-content {
+    .sponsors-img-content,
+    .features-main {
         flex-direction: column;
     }
 
@@ -266,6 +348,13 @@ main {
     .facts-card-container {
         gap: 20px;
     }
+    .features-images img{
+        width: 100%;
+        margin-left: 0;
+    }
+    .ten-years-badge{
+        position: static;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width:960px) {
@@ -276,7 +365,8 @@ main {
     nav,
     .team-main,
     .facts-card-container,
-    .sponsors-img-content {
+    .sponsors-img-content,
+    .features-main {
         flex-direction: column;
     }
 
@@ -288,6 +378,9 @@ main {
 
     .facts-card-container {
         gap: 20px;
+    }
+    .ten-years-badge{
+        right: 0;
     }
 }
 
